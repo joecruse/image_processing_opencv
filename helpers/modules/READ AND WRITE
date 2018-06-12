@@ -1,0 +1,11 @@
+import cv2
+import numpy as np 
+
+img = cv2.imread("/home/joemarshal/Downloads/ronaldo.jpg", 1)
+
+cv2.show("image", img)
+cv2.waitKey(0)
+cv2.imwrite("writeronaldo.png", img) 
+(or)
+cv2.imwrite("/home/joemarshal/Downloads/ronaldo1.jpg", img)    #this command will help us to write an image in  png format
+cv2.destroyAllWindows

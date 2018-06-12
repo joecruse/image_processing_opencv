@@ -1,0 +1,8 @@
+import cv2                             #imports the opencv
+import numpy as np                     #imports numpy
+
+img = cv2.imread("/home/joemarshal/Downloads/ronaldo.jpg", cv2.IMREAD_COLOR)           #this will read the image in color mode
+cv2.imshow("image", img)                             #this will show the image .the word image is used to as a name to display 
+cv2.waitKey(0)                                                           #this will keep the window open till we press ('esc')
+cv2.destroyAllWindows                                                     #this will helps us to exit the code that is running
+
