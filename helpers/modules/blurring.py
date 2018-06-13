@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-image_loc = "/home/joemarshal/Downloads/resizedronaldo.jpg"
+image_loc = "/home/joemarshal/image_processing_opencv/images/resizedronaldo.jpg"
 
 
 def guassian_blurring(img):
@@ -20,7 +20,6 @@ def median_blurring(img):
 
 def bilateral_blurring(img):
     src = cv2.bilateralFilter(img, 15, 15, 15)
-    cv2.imwrite("bilateral.jpeg", src)
     cv2.imshow("image", src)
     cv2.waitKey(0)
     cv2.destroyAllWindows()
