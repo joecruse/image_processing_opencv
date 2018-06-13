@@ -1,5 +1,5 @@
 import cv2
-import numpy as np
+
 from helpers.image_reader import image_reader, show_image
 
 

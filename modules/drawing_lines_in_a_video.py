@@ -1,8 +1,14 @@
+"""
+Code to draw lines in a video
+"""
+
 import cv2
-import numpy as np
+
 fourcc = cv2.VideoWriter_fourcc(*'DIVX')
 out = cv2.VideoWriter('output.MOV', fourcc, 20.0, (640, 480))
-if __name__ =="__main__":
+
+
+if __name__ == "__main__":
     video = cv2.VideoCapture(0)
     while True:
         _, frame = video.read()

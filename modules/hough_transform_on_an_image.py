@@ -24,7 +24,7 @@ def hough_transform_image(image, img):
 
 
 if __name__ == "__main__":
-    img1 = "/home/joemarshal/image_processing/images/lines.png"
+    img1 = "/home/joemarshal/image_processing_opencv/images/lines.png"
     mode = 0
     image1 = image_reader(img1, 1)
     grey = cv2.cvtColor(image1, cv2.COLOR_BGR2GRAY)

@@ -1,13 +1,13 @@
-from pprint import pprint
+
 
 import cv2
-import numpy as np
-from image_reader_1 import image_reader
-from image_reader_1 import show_image
+from helpers.image_reader import image_reader, show_image
 
 
 def bgr2hsv(img):
     return cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
+
+
 
 def increase_hue_value(cvt2, factor):
     h, w, *no_of_channels = cvt2.shape
@@ -26,6 +26,7 @@ def increase_saturation_value(cvt1, factor):
             print(cvt1[y][x][1])
     return cvt1
 
+
 def increase_value(cvt3, factor):
     h, w, *no_of_channels = cvt3.shape
     for y in range(h):
@@ -36,27 +37,27 @@ def increase_value(cvt3, factor):
 
 
 if __name__ == "__main__":
-    im = "circles.png"
+    im = "/home/joemarshal/image_processing_opencv/images/circles.png"
     mode = 1
     img = image_reader(im, mode)
     cvt = bgr2hsv(img)
     factor = 100
 
-    show_image("ima", cvt)
+    show_image(cvt)
     # print(cvt[:, :, 0])
     #
     res = increase_hue_value(cvt, factor)
-    show_image("increase_h", res)
+    show_image(res)
 
 #
     res1 = increase_saturation_value(cvt, factor)
 #     pprint(cvt)
 #     print("-------------")
 #     pprint(res1)
-    show_image("increase_s", res1)
+    show_image(res1)
 
     res2 = increase_value(cvt, factor)
-    show_image("increased_v", res2)
+    show_image(res2)
 #
 #
 # #show_image("increased_v", res2)

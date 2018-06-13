@@ -1,14 +1,11 @@
-import numpy as np
 import cv2
 
 
-def resizing(width=None, height=None):
-    pass
-
 
 if __name__ == "__main__":
-    img = cv2.imread("/home/joemarshal/Downloads/messi.jpg", cv2.IMREAD_REDUCED_COLOR_4)
+    img = cv2.imread("/home/joemarshal/image_processing_opencv/images/messi.jpg", cv2.IMREAD_REDUCED_COLOR_4)
     width = int(input())
+    # give the input width and height
     height = int(input())
     r = width / img.shape[1]
     dim = (height, int(img.shape[0] * r))

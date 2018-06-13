@@ -1,5 +1,6 @@
 import cv2
 
+
 class CompareImage(object):
 
     def __init__(self, image_1_path, image_2_path):
@@ -28,9 +29,10 @@ class CompareImage(object):
         img_template_diff = 1 - img_template_probability_match
         commutative_image_diff = (img_hist_diff / 10) + img_template_diff
         return commutative_image_diff
-if __name__ =="__main__":
-    compare_image = CompareImage("/home/joemarshal/Downloads/contrast_ronaldo.jpg", "/home/joemarshal/Downloads/contrased_ronaldo.jpg")
+
+
+if __name__ == "__main__":
+    compare_image = CompareImage("/home/joemarshal/image_processing_opencv/images/contrast_ronaldo.jpg",
+                                 "/home/joemarshal/image_processing_opencv/images/contrast_ronaldo.jpg")
     image_difference = compare_image.compare_image()
     print(image_difference)
-
-

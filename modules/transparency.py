@@ -2,11 +2,9 @@ from __future__ import print_function
 import cv2
 import numpy as np
 from helpers.image_reader import image_reader, show_image
-im1 = "/home/joemarshal/Downloads/resizedronaldo.jpg"
+im1 = "/home/joemarshal/image_processing_opencv/images/resizedronaldo.jpg"
 mode = 1
 img = image_reader(im1, mode)
-# show_image(img)
-
 for alpha in np.arange(0, 1.1, 0.1)[::-1]:
 
         if alpha > 0.0:
@@ -21,6 +19,3 @@ for alpha in np.arange(0, 1.1, 0.1)[::-1]:
         print("alpha{}, beta{}" .format(alpha, 1 - alpha))
 
         show_image(output)
-
-
-
