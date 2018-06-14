@@ -2,7 +2,6 @@
 Here you will see the class code for shape detectors
 """
 import cv2
-import numpy as np
 
 
 class Shapedetector:
@@ -11,7 +10,6 @@ class Shapedetector:
 
     def detect(self, c):
         """
-
         :param c: outline of the shape we are trying to find
         :return:
         """

@@ -1,30 +1,23 @@
+"""
+modeule for image reading and showing image
+"""
+
 import cv2
 
 
 def image_reader(img, mode):
-    """
-
-    :param img: pass the image path
-    :param mode: pass the mode of the image to be displayed
-    :return: passes back the read function
-    """
-    return cv2.imread(img, mode)
+    read = cv2.imread(img, mode)
+    return read
 
 
-def show_image(img):
-    """
-
-    :param img: pass the image
-    :return: displayes the image
-    """
-    cv2.namedWindow("Show", cv2.WINDOW_NORMAL)
-    cv2.imshow("Show", img)
+def show_image(image):
+    cv2.imshow("show", image)
     cv2.waitKey(0)
     cv2.destroyAllWindows()
 
 
 if __name__ == "__main__":
-    img1 = ""
-    mode1 = 0
-    im = image_reader(img1, mode1)
-    show_image(im)
+    im = "/home/joemarshal/image_processing_opencv/images/resizedronaldo.jpg"
+    mode = 1
+    img = image_reader(im, mode)
+    show_image(img)
