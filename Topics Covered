@@ -1,0 +1,54 @@
+31-May-2018
+Understanding Brightness and Contrast 
+Adjusting Brightness and Contrast with OpenCV 
+Interactive Image Adjustment - translation, rotation, rescaling and resizing 
+Storing Images 
+Blurring Images 
+
+1 - June-2018
+Compositing Images 
+Color Filters 
+Processing Video 
+Recoloring Video 
+
+4- June-2018
+Performing Simple Image Arithmetic 
+Remapping an Image 
+Segmenting an Image with the GrabCut Algorithm 
+Converting Color Representations 
+
+5- June-2018
+Representing Colors with Hue, Saturation, and Brightness 
+Computing an Image Histogram 
+Applying Look-Up Tables to Modify the Image's Appearance 
+Equalizing the Image Histogram 
+
+6- June-2018
+Using the Mean Shift Algorithm to Find an Object 
+Retrieving Similar Images Using Histogram Comparison 
+Eroding and Dilating Images Using Morphological Filters 
+Opening and Closing Images Using Morphological Filters 
+
+7- June-2018
+Applying Morphological Operators on Gray-Level Images 
+Segmenting Images Using Watersheds 
+Extracting Distinctive Regions Using MSER 
+Filtering Images Using Low-Pass Filters 
+
+8- June-2018
+Downsampling Images with Filters 
+Filtering Images Using a Median Filter 
+Applying Directional Filters to Detect Edges
+Edge Detectors
+
+11- June-2018
+Sobel Detectors
+Canny Edge Detectors
+Computing the Laplacian of an Image 
+Detecting Image Contours with the Canny Operator 
+
+12- June-2018
+Detecting Lines in Images with the Hough Transform 
+Fitting a Line to a Set of Points 
+Extracting Connected Components 
+Computing Components' Shape Descriptors
