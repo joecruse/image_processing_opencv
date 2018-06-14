@@ -1,0 +1,5 @@
+*.pyc
+images/*
+videos/*
+.idea/*
+__pycache__/image_reader.cpython-36.py
